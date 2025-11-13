@@ -1,4 +1,4 @@
-abstract class Funcionario {
+public abstract class Funcionario {
     String nome;
     double salarioBase;
 
@@ -24,4 +24,8 @@ abstract class Funcionario {
     }
 
     public abstract void calcularSalario();
+
+    public void mostrarInformacoes() {
+        System.out.println("Nome: " + nome + " | Salario Base: R$" + salarioBase);
+    }
 }
